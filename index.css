@@ -98,7 +98,6 @@ a {
     padding: 20px 0 160px;
     background: linear-gradient(90deg,#7250d5 0, #aa47a5 50%, #f43a67 99%);
     position: relative;
-    overflow: hidden;
 }
 
 .banner::before {
@@ -140,6 +139,35 @@ a {
     margin: 20px 0;
 }
 
+ /*----------IMG BANNER----------*/
+
+.banner-img-cont {
+    width: 283px;
+    height: 170px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 60%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.banner-img-cont a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.banner-img-cont a img {
+    width: 98.5%;
+    height: 98%;
+}
+
 @media screen and (min-width:480px) {
     .banner-txt {
         max-width: 708px;
@@ -149,6 +177,12 @@ a {
 @media screen and (min-width:768px) {
     .banner {
         padding: 75px 0 340px;
+    }
+
+    .banner-img-cont {
+        top: 50%;
+        width: 730px;
+        height: 424px;
     }
 }
 
