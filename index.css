@@ -24,6 +24,8 @@ a {
     text-decoration: none;
 }
 
+/*----------NAVBAR----------*/
+
 .navbar {
     max-height: 60px;
 }
@@ -90,7 +92,58 @@ a {
     height: 100px;
 }
 
+/*----------BANNER----------*/
+
+.banner {
+    padding: 20px 0 160px;
+    background: linear-gradient(90deg,#7250d5 0, #aa47a5 50%, #f43a67 99%);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    left: -28%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: hsla(0, 0%, 100%, .1);
+    transform: skewX(-25deg);
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    bottom: -50px;
+    transform: skewY(-3.5deg);
+}
+
+.banner-txt {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+}
+
+.banner-txt h1 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    margin: 20px 0;
+}
+
 @media  screen and (min-width:900px) {
+
+/*----------NAVBAR----------*/
+
     #navbar-toggle {
         display: none;
     }
