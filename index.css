@@ -383,6 +383,59 @@ a {
     margin: auto;
 }
 
+/*----------COURSE SECTION----------*/
+
+.course-sec {
+    background-color: var(--bg-grey);
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
+.course-grid-cont {
+    background-color: var(--bg-white);
+    border: 1px solid #fff;
+    box-shadow: 0 1px #fff;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.course-img-cont {
+    overflow: hidden;
+    width: 100%;
+}
+
+.course-img-cont img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    border-bottom: 1px solid #ededed;
+}
+
+.course-grid-title {
+    display: block;
+    color: #191919;
+    line-height: 25px;
+    padding: 16px 16px 4px 16px;
+    font-weight: bold;
+    font-size: 18px;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+.course-grid-cont p {
+    font-size: 15px;
+    color: gray;
+    font-weight: 200;
+    overflow: hidden;
+    margin-bottom: 70px;
+    padding: 5px 16px;
+    max-height: 85px;
+}
+
 @media screen and (min-width:480px) {
     .banner-txt {
         max-width: 708px;
