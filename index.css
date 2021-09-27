@@ -398,8 +398,23 @@ a {
 
 .course-sec {
     background-color: var(--bg-grey);
+}
+
+.course-sec h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 31px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.course-sec-cont {
     padding: 50px 30px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    max-width: 750px;
 }
 
 .course-grid-cont {
@@ -410,6 +425,7 @@ a {
     cursor: pointer;
     margin-bottom: 50px;
     text-align: center;
+    height: auto;
 }
 
 .course-img-cont {
@@ -458,6 +474,8 @@ a {
         margin-left: 15px;
     }
 
+ /*----------BANNER SECTION----------*/
+
     .banner {
         padding: 75px 0 340px;
     }
@@ -468,26 +486,44 @@ a {
         height: 424px;
     }
 
+ /*----------INTRO SECTION----------*/
+
     .intro-sec {
         margin: 150px auto 0;
     }
 
-    .info-grid-cont {
-        flex-direction: row;
-        margin: 50px 0;
-    }
+ /*----------INFO SECTION----------*/
 
+    .info-grid-cont,
     .info-grid-cont.reverse {
         flex-direction: row;
+        margin: 50px 0;
     }
 
     .info-grid-cont img  {
         max-width: 50%;
     }
 
+ /*----------COURSE SECTION----------*/
+
+    .course-sec-cont {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        max-width: 750px;
+    }
+
+    .cou h2 {
+        padding-bottom: 25px;
+    }
+
+    .course-grid-cont {
+        height: 100%;
+    }
+
     .reviews-grid-cont {
         grid-template-columns: 1fr 1fr;
     }
+
 
 }
 
@@ -568,12 +604,20 @@ a {
         grid-template: 1fr / 1fr 1fr 1fr 1fr;
     }
 
- /*----------REVIEWS SECTION----------*/
+ /*----------COURSE SECTION----------*/
 
+    .course-sec-cont {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 970px;
+    }
 }
 
 @media  screen and (min-width:1200px) {
     .navbar-links-container {
         padding-right: 0px;
+    }
+
+    .course-sec-cont {
+        max-width: 1170px;
     }
 }
