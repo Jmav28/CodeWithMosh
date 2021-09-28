@@ -201,7 +201,7 @@ a {
     text-align: center;
 }
 
-.rainbow-txt-cont p {
+.rainbow-txt-cont {
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -481,6 +481,87 @@ a {
 .course-sec > p {
     text-align: center;
     margin-bottom: 31px;
+}
+
+/*----------SUBSCRIBE SECTION----------*/
+
+.subscribe-sec {
+    background: linear-gradient(90deg, #31092a,#0e0331);
+    color: var(--bg-grey);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.subscribe-cont {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.subscribe-cont h2 {
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 700;
+    display: block;
+    margin: 20px 0 12px;
+}
+
+.subscribe-cont > p {
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 200;
+}
+
+.subscribe-price-cont {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #53125d,#321858 80%);
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.subscribe-price-cont span {
+    display: block;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.subscribe-price-cont .offer-slash {
+    height: 1px;
+    background: #826b90;
+    width: 30%;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+}
+
+.subscribe-cont .guarantee {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(-16%);
+    max-width: 400px;
+}
+
+.subscribe-btn {
+    display: inline-block;
+    color: var(--bg-white);
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    background: linear-gradient(90deg,#339cff,#5960ff 43%,#d713e6);
+    border-radius: 30px;
 }
 
 @media screen and (min-width:480px) {
