@@ -398,6 +398,7 @@ a {
 
 .course-sec {
     background-color: var(--bg-grey);
+    padding-bottom: 50px;
 }
 
 .course-sec h2 {
@@ -409,7 +410,7 @@ a {
 }
 
 .course-sec-cont {
-    padding: 50px 30px;
+    padding: 50px 30px 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -461,6 +462,25 @@ a {
     margin-bottom: 70px;
     padding: 5px 16px;
     max-height: 85px;
+}
+
+.course-btn {
+    color: var(--bg-white);
+    max-width: 195.5px;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btns-color);
+    padding: 16px 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+.course-sec > p {
+    text-align: center;
+    margin-bottom: 31px;
 }
 
 @media screen and (min-width:480px) {
@@ -517,7 +537,7 @@ a {
     }
 
     .course-grid-cont {
-        height: 100%;
+        height: 90%;
     }
 
     .reviews-grid-cont {
